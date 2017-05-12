@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841761EC6086D00AF5019 /* AppDelegate.swift */; };
+		75E841791EC6086D00AF5019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841781EC6086D00AF5019 /* ViewController.swift */; };
+		75E8417C1EC6086D00AF5019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417A1EC6086D00AF5019 /* Main.storyboard */; };
+		75E8417E1EC6086D00AF5019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417D1EC6086D00AF5019 /* Assets.xcassets */; };
+		75E841811EC6086D00AF5019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		75E841731EC6086D00AF5019 /* ShardsOfTheInfinite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShardsOfTheInfinite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E841761EC6086D00AF5019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75E841781EC6086D00AF5019 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75E8417B1EC6086D00AF5019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75E8417D1EC6086D00AF5019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75E841801EC6086D00AF5019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75E841821EC6086D00AF5019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75E841701EC6086C00AF5019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75E8416A1EC6086C00AF5019 = {
+			isa = PBXGroup;
+			children = (
+				75E841751EC6086D00AF5019 /* ShardsOfTheInfinite */,
+				75E841741EC6086D00AF5019 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75E841741EC6086D00AF5019 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75E841731EC6086D00AF5019 /* ShardsOfTheInfinite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75E841751EC6086D00AF5019 /* ShardsOfTheInfinite */ = {
+			isa = PBXGroup;
+			children = (
+				75E841761EC6086D00AF5019 /* AppDelegate.swift */,
+				75E841781EC6086D00AF5019 /* ViewController.swift */,
+				75E8417A1EC6086D00AF5019 /* Main.storyboard */,
+				75E8417D1EC6086D00AF5019 /* Assets.xcassets */,
+				75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */,
+				75E841821EC6086D00AF5019 /* Info.plist */,
+			);
+			path = ShardsOfTheInfinite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75E841721EC6086C00AF5019 /* ShardsOfTheInfinite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75E841851EC6086D00AF5019 /* Build configuration list for PBXNativeTarget "ShardsOfTheInfinite" */;
+			buildPhases = (
+				75E8416F1EC6086C00AF5019 /* Sources */,
+				75E841701EC6086C00AF5019 /* Frameworks */,
+				75E841711EC6086C00AF5019 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShardsOfTheInfinite;
+			productName = ShardsOfTheInfinite;
+			productReference = 75E841731EC6086D00AF5019 /* ShardsOfTheInfinite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75E8416B1EC6086C00AF5019 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = SBHS;
+				TargetAttributes = {
+					75E841721EC6086C00AF5019 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 75E8416E1EC6086C00AF5019 /* Build configuration list for PBXProject "ShardsOfTheInfinite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75E8416A1EC6086C00AF5019;
+			productRefGroup = 75E841741EC6086D00AF5019 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75E841721EC6086C00AF5019 /* ShardsOfTheInfinite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75E841711EC6086C00AF5019 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E841811EC6086D00AF5019 /* LaunchScreen.storyboard in Resources */,
+				75E8417E1EC6086D00AF5019 /* Assets.xcassets in Resources */,
+				75E8417C1EC6086D00AF5019 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75E8416F1EC6086C00AF5019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E841791EC6086D00AF5019 /* ViewController.swift in Sources */,
+				75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75E8417A1EC6086D00AF5019 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75E8417B1EC6086D00AF5019 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75E841801EC6086D00AF5019 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75E841831EC6086D00AF5019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75E841841EC6086D00AF5019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75E841861EC6086D00AF5019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShardsOfTheInfinite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbhs.Mobile.ShardsOfTheInfinite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		75E841871EC6086D00AF5019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShardsOfTheInfinite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbhs.Mobile.ShardsOfTheInfinite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75E8416E1EC6086C00AF5019 /* Build configuration list for PBXProject "ShardsOfTheInfinite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E841831EC6086D00AF5019 /* Debug */,
+				75E841841EC6086D00AF5019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75E841851EC6086D00AF5019 /* Build configuration list for PBXNativeTarget "ShardsOfTheInfinite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E841861EC6086D00AF5019 /* Debug */,
+				75E841871EC6086D00AF5019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75E8416B1EC6086C00AF5019 /* Project object */;
+}
