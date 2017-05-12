@@ -12,6 +12,12 @@
 		75E8417C1EC6086D00AF5019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417A1EC6086D00AF5019 /* Main.storyboard */; };
 		75E8417E1EC6086D00AF5019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417D1EC6086D00AF5019 /* Assets.xcassets */; };
 		75E841811EC6086D00AF5019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */; };
+		75E841891EC60BFC00AF5019 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841881EC60BFC00AF5019 /* Enemy.swift */; };
+		75E8418B1EC60C1600AF5019 /* EnemyDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E8418A1EC60C1600AF5019 /* EnemyDictionary.swift */; };
+		75E8418D1EC60C2800AF5019 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E8418C1EC60C2800AF5019 /* Weapon.swift */; };
+		75E8418F1EC60C3700AF5019 /* WeaponDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E8418E1EC60C3700AF5019 /* WeaponDictionary.swift */; };
+		75E841921EC60C4900AF5019 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841911EC60C4900AF5019 /* Entity.swift */; };
+		75E841941EC60C5100AF5019 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841931EC60C5100AF5019 /* player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		75E8417D1EC6086D00AF5019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75E841801EC6086D00AF5019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75E841821EC6086D00AF5019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75E841881EC60BFC00AF5019 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		75E8418A1EC60C1600AF5019 /* EnemyDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyDictionary.swift; sourceTree = "<group>"; };
+		75E8418C1EC60C2800AF5019 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		75E8418E1EC60C3700AF5019 /* WeaponDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponDictionary.swift; sourceTree = "<group>"; };
+		75E841911EC60C4900AF5019 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		75E841931EC60C5100AF5019 /* player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 				75E8417D1EC6086D00AF5019 /* Assets.xcassets */,
 				75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */,
 				75E841821EC6086D00AF5019 /* Info.plist */,
+				75E841881EC60BFC00AF5019 /* Enemy.swift */,
+				75E8418A1EC60C1600AF5019 /* EnemyDictionary.swift */,
+				75E8418C1EC60C2800AF5019 /* Weapon.swift */,
+				75E8418E1EC60C3700AF5019 /* WeaponDictionary.swift */,
+				75E841911EC60C4900AF5019 /* Entity.swift */,
+				75E841931EC60C5100AF5019 /* player.swift */,
 			);
 			path = ShardsOfTheInfinite;
 			sourceTree = "<group>";
@@ -136,8 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E8418D1EC60C2800AF5019 /* Weapon.swift in Sources */,
+				75E8418B1EC60C1600AF5019 /* EnemyDictionary.swift in Sources */,
+				75E841921EC60C4900AF5019 /* Entity.swift in Sources */,
 				75E841791EC6086D00AF5019 /* ViewController.swift in Sources */,
+				75E841941EC60C5100AF5019 /* player.swift in Sources */,
+				75E8418F1EC60C3700AF5019 /* WeaponDictionary.swift in Sources */,
 				75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */,
+				75E841891EC60BFC00AF5019 /* Enemy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
