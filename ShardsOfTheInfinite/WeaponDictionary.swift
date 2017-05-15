@@ -26,5 +26,6 @@ class WeaponDictionary{
                 return i
             }
         }
+        return list[0]
     }
 }

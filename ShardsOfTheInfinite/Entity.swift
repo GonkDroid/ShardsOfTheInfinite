@@ -9,5 +9,22 @@
 import Foundation
 
 class Entity{
+    var currentHp:Int!
+    var maxHp:Int!
+    var currentWeapon:Weapon!
+    var currentVis:Int! = 0
+    var maxVis:Int!
+    var type:Enemy!
     
+    var weaponList = WeaponDictionary()
+    var enemylist = EnemyDictionary()
+    
+    init(race: String){
+        type = enemylist.getStats(name: race)
+        currentWeapon = weaponList.getStats(name: type.heldWeapon)
+        currentVis = type.vis
+        currentHp = type.health
+        maxHp = type.health
+        maxVis = type.vis
+    }
 }

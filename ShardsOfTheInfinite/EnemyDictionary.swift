@@ -24,5 +24,6 @@ class EnemyDictionary{
                 return i
             }
         }
+        return list[0]
     }
 }
