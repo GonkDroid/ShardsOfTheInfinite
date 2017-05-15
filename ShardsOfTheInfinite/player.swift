@@ -8,24 +8,8 @@
 
 import Foundation
 
-class Player{
-    var currentHp:Int!
-    var maxHp:Int!
-    var currentWeapon:Weapon!
-    var currentVis:Int! = 0
-    var maxVis:Int!
-    var type:Enemy!
-    
-    var weaponList = WeaponDictionary()
-    var enemylist = EnemyDictionary()
-    
-    init(){
-        type = enemylist.getStats(name: "Humanplayer")
-        currentWeapon = weaponList.getStats(name: type.heldWeapon)
-        currentVis = type.vis
-        currentHp = type.health
-        maxHp = type.health
-        maxVis = type.vis
-    }
+class Player: Entity{
+    var shards:Int! = 0
+    var coins:Int! = 0
     
 }
