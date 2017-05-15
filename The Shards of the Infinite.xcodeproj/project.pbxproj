@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		753318741EC9FA1300D0B5A3 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753318731EC9FA1300D0B5A3 /* InventoryViewController.swift */; };
 		7572C6CB1EC60BF100161CDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572C6CA1EC60BF100161CDA /* AppDelegate.swift */; };
 		7572C6CD1EC60BF100161CDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572C6CC1EC60BF100161CDA /* ViewController.swift */; };
 		7572C6D01EC60BF100161CDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7572C6CE1EC60BF100161CDA /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		753318731EC9FA1300D0B5A3 /* InventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
 		7572C6C71EC60BF100161CDA /* The Shards of the Infinite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Shards of the Infinite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7572C6CA1EC60BF100161CDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7572C6CC1EC60BF100161CDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				7572C6CA1EC60BF100161CDA /* AppDelegate.swift */,
 				7572C6CC1EC60BF100161CDA /* ViewController.swift */,
+				753318731EC9FA1300D0B5A3 /* InventoryViewController.swift */,
 				7572C6CE1EC60BF100161CDA /* Main.storyboard */,
 				7572C6D11EC60BF200161CDA /* Assets.xcassets */,
 				7572C6D31EC60BF200161CDA /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7572C6CD1EC60BF100161CDA /* ViewController.swift in Sources */,
+				753318741EC9FA1300D0B5A3 /* InventoryViewController.swift in Sources */,
 				7572C6CB1EC60BF100161CDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +301,7 @@
 				7572C6DB1EC60BF200161CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
