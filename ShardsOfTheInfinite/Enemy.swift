@@ -18,8 +18,9 @@ class Enemy{
     var magicAttack:Int! = 0
     var coins:Int! = 0
     var lootLevel:Int! = 0
+    var heldWeapon:String!
     
-    init(name: String, experienceWorth: Int, health: Int, evasion: Int, defense: Int, vis: Int, magicAttack: Int, coins: Int, lootLevel: Int){
+    init(name: String, weapon: String, experienceWorth: Int, health: Int, evasion: Int, defense: Int, vis: Int, magicAttack: Int, coins: Int, lootLevel: Int){
         self.name = name
         self.experienceWorth = experienceWorth
         self.health = health
@@ -29,41 +30,6 @@ class Enemy{
         self.magicAttack = magicAttack
         self.coins = coins
         self.lootLevel = lootLevel
-    }
-    
-    func enemyName() -> String{
-        return name
-    }
-    
-    func enemyExperienceWorth() -> Int{
-        return experienceWorth
-    }
-    
-    func enemyHealth() -> Int{
-        return health
-    }
-    
-    func enemyEvasion() -> Int{
-        return evasion
-    }
-    
-    func enemyDefense() -> Int{
-        return defense
-    }
-    
-    func enemyVis() -> Int{
-        return vis
-    }
-    
-    func enemyMagicAttack() -> Int{
-        return magicAttack
-    }
-    
-    func enemyCoins() -> Int{
-        return coins
-    }
-    
-    func enemyLootLevel() -> Int{
-        return lootLevel
+        self.heldWeapon = weapon
     }
 }

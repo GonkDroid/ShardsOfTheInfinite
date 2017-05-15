@@ -20,7 +20,11 @@ class WeaponDictionary{
         list.append(Weapon(name: "Greatclub", damage: 8, hitChance: 40, blockingDefense: 20))
     }
     
-    func getList() -> [Weapon]{
-        return list
+    func getStats(name: String) -> Weapon{
+        for i in list{
+            if i.name == name{
+                return i
+            }
+        }
     }
 }
