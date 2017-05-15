@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7525D0EA1EC9F8AC0000868E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525D0E91EC9F8AC0000868E /* Player.swift */; };
+		7525D0EC1EC9FF440000868E /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525D0EB1EC9FF440000868E /* Story.swift */; };
 		75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841761EC6086D00AF5019 /* AppDelegate.swift */; };
 		75E841791EC6086D00AF5019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841781EC6086D00AF5019 /* ViewController.swift */; };
 		75E8417C1EC6086D00AF5019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417A1EC6086D00AF5019 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		7525D0E91EC9F8AC0000868E /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		7525D0EB1EC9FF440000868E /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		75E841731EC6086D00AF5019 /* ShardsOfTheInfinite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShardsOfTheInfinite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E841761EC6086D00AF5019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75E841781EC6086D00AF5019 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				75E8418E1EC60C3700AF5019 /* WeaponDictionary.swift */,
 				75E841911EC60C4900AF5019 /* Entity.swift */,
 				7525D0E91EC9F8AC0000868E /* Player.swift */,
+				7525D0EB1EC9FF440000868E /* Story.swift */,
 			);
 			path = ShardsOfTheInfinite;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				75E8418F1EC60C3700AF5019 /* WeaponDictionary.swift in Sources */,
 				75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */,
 				75E841891EC60BFC00AF5019 /* Enemy.swift in Sources */,
+				7525D0EC1EC9FF440000868E /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

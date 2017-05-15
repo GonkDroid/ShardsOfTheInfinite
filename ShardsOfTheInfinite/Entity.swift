@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Entity{
+class Entity: NSObject{
     var currentHp:Int!
     var maxHp:Int!
     var currentWeapon:Weapon!
@@ -26,5 +26,13 @@ class Entity{
         currentHp = type.health
         maxHp = type.health
         maxVis = type.vis
+    }
+    
+    func reduceHP(amount: Int){
+        currentHp = currentHp - amount
+    }
+    
+    func useVis(amount: Int){
+        currentVis = currentVis - amount
     }
 }
