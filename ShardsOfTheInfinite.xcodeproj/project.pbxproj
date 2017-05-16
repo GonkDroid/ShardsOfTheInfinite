@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		7525D0EA1EC9F8AC0000868E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525D0E91EC9F8AC0000868E /* Player.swift */; };
 		7525D0EC1EC9FF440000868E /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525D0EB1EC9FF440000868E /* Story.swift */; };
+		75A963C81ECB4D3300935AA0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963C71ECB4D3300935AA0 /* Item.swift */; };
+		75A963CA1ECB4F1000935AA0 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963C91ECB4F1000935AA0 /* Armor.swift */; };
+		75A963CC1ECB4FE300935AA0 /* ArmorDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963CB1ECB4FE300935AA0 /* ArmorDictionary.swift */; };
+		75A963CE1ECB53D700935AA0 /* ItemDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963CD1ECB53D700935AA0 /* ItemDictionary.swift */; };
+		75A963D01ECB56BA00935AA0 /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963CF1ECB56BA00935AA0 /* Shield.swift */; };
+		75A963D21ECB577B00935AA0 /* ShieldDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963D11ECB577B00935AA0 /* ShieldDictionary.swift */; };
 		75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841761EC6086D00AF5019 /* AppDelegate.swift */; };
 		75E841791EC6086D00AF5019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841781EC6086D00AF5019 /* ViewController.swift */; };
 		75E8417C1EC6086D00AF5019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417A1EC6086D00AF5019 /* Main.storyboard */; };
@@ -24,6 +30,12 @@
 /* Begin PBXFileReference section */
 		7525D0E91EC9F8AC0000868E /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		7525D0EB1EC9FF440000868E /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		75A963C71ECB4D3300935AA0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		75A963C91ECB4F1000935AA0 /* Armor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
+		75A963CB1ECB4FE300935AA0 /* ArmorDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmorDictionary.swift; sourceTree = "<group>"; };
+		75A963CD1ECB53D700935AA0 /* ItemDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDictionary.swift; sourceTree = "<group>"; };
+		75A963CF1ECB56BA00935AA0 /* Shield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
+		75A963D11ECB577B00935AA0 /* ShieldDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShieldDictionary.swift; sourceTree = "<group>"; };
 		75E841731EC6086D00AF5019 /* ShardsOfTheInfinite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShardsOfTheInfinite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E841761EC6086D00AF5019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75E841781EC6086D00AF5019 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +93,12 @@
 				75E841911EC60C4900AF5019 /* Entity.swift */,
 				7525D0E91EC9F8AC0000868E /* Player.swift */,
 				7525D0EB1EC9FF440000868E /* Story.swift */,
+				75A963C71ECB4D3300935AA0 /* Item.swift */,
+				75A963C91ECB4F1000935AA0 /* Armor.swift */,
+				75A963CB1ECB4FE300935AA0 /* ArmorDictionary.swift */,
+				75A963CD1ECB53D700935AA0 /* ItemDictionary.swift */,
+				75A963CF1ECB56BA00935AA0 /* Shield.swift */,
+				75A963D11ECB577B00935AA0 /* ShieldDictionary.swift */,
 			);
 			path = ShardsOfTheInfinite;
 			sourceTree = "<group>";
@@ -157,15 +175,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A963C81ECB4D3300935AA0 /* Item.swift in Sources */,
+				75A963CE1ECB53D700935AA0 /* ItemDictionary.swift in Sources */,
 				75E8418D1EC60C2800AF5019 /* Weapon.swift in Sources */,
 				75E8418B1EC60C1600AF5019 /* EnemyDictionary.swift in Sources */,
+				75A963CA1ECB4F1000935AA0 /* Armor.swift in Sources */,
 				75E841921EC60C4900AF5019 /* Entity.swift in Sources */,
 				75E841791EC6086D00AF5019 /* ViewController.swift in Sources */,
 				7525D0EA1EC9F8AC0000868E /* Player.swift in Sources */,
 				75E8418F1EC60C3700AF5019 /* WeaponDictionary.swift in Sources */,
+				75A963D21ECB577B00935AA0 /* ShieldDictionary.swift in Sources */,
 				75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */,
 				75E841891EC60BFC00AF5019 /* Enemy.swift in Sources */,
 				7525D0EC1EC9FF440000868E /* Story.swift in Sources */,
+				75A963D01ECB56BA00935AA0 /* Shield.swift in Sources */,
+				75A963CC1ECB4FE300935AA0 /* ArmorDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

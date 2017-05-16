@@ -15,7 +15,9 @@ class Entity: NSObject{
     var currentVis:Int! = 0
     var maxVis:Int!
     var type:Enemy!
+    var currentArmor:Armor!
     
+    var armorList = ArmorDictionary()
     var weaponList = WeaponDictionary()
     var enemylist = EnemyDictionary()
     

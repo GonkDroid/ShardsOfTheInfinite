@@ -11,11 +11,20 @@ import Foundation
 class Story{
     
     
+    func startAdventure(){
+        
+    }
+    
+    
     func combat(offenseEntity: Entity, defenseEntity: Entity, blocked: Bool, usedMagic: Bool){
-        let magicHit = 90
+        let magicHit = 60
         if(blocked){
             let blockingEvade = defenseEntity.type.evasion + defenseEntity.currentWeapon.blockingDefense
             if(usedMagic){
+                var damage = offenseEntity.type.magicAttack - (defenseEntity.type.defense+defenseEntity.currentArmor.defense)
+                if damage <= 0{
+                    damage = 1
+                }
                 var hitChance = magicHit - blockingEvade
                 let roll = Int(arc4random_uniform(100))
                 
@@ -26,10 +35,14 @@ class Story{
                 }
                 
                 if(roll >= hitChance){
-                    defenseEntity.reduceHP(amount: offenseEntity.type.magicAttack - defenseEntity.type.defense)
+                    defenseEntity.reduceHP(amount: damage)
                 }
             }
             else {
+                var damage = offenseEntity.currentWeapon.damage - (defenseEntity.type.defense+defenseEntity.currentArmor.defense)
+                if damage <= 0{
+                    damage = 1
+                }
                 var hitChance = offenseEntity.currentWeapon.hitChance - blockingEvade
                 let roll = Int(arc4random_uniform(100))
                 
@@ -38,12 +51,16 @@ class Story{
                 }
                 
                 if(roll >= hitChance){
-                    defenseEntity.reduceHP(amount: offenseEntity.currentWeapon.damage - defenseEntity.type.defense)
+                    defenseEntity.reduceHP(amount: damage)
                 }
             }
         }
         else{
             if(usedMagic){
+                var damage = offenseEntity.type.magicAttack - (defenseEntity.type.defense+defenseEntity.currentArmor.defense)
+                if damage <= 0{
+                    damage = 1
+                }
                 var hitChance = magicHit - defenseEntity.type.evasion
                 let roll = Int(arc4random_uniform(100))
                 
@@ -54,10 +71,14 @@ class Story{
                 }
                 
                 if(roll >= hitChance){
-                    defenseEntity.reduceHP(amount: offenseEntity.type.magicAttack - defenseEntity.type.defense)
+                    defenseEntity.reduceHP(amount: damage)
                 }
             }
             else {
+                var damage = offenseEntity.currentWeapon.damage - (defenseEntity.type.defense+defenseEntity.currentArmor.defense)
+                if damage <= 0{
+                    damage = 1
+                }
                 var hitChance = offenseEntity.currentWeapon.hitChance - defenseEntity.type.evasion
                 let roll = Int(arc4random_uniform(100))
                 
@@ -66,7 +87,7 @@ class Story{
                 }
                 
                 if(roll >= hitChance){
-                    defenseEntity.reduceHP(amount: offenseEntity.currentWeapon.damage - defenseEntity.type.defense)
+                    defenseEntity.reduceHP(amount: damage)
                 }
             }
         }
