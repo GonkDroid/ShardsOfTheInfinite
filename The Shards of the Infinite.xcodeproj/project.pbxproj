@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		753318741EC9FA1300D0B5A3 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753318731EC9FA1300D0B5A3 /* InventoryViewController.swift */; };
+		753318761ECA06FB00D0B5A3 /* myTransitionlalalal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753318751ECA06FB00D0B5A3 /* myTransitionlalalal.swift */; };
 		7572C6CB1EC60BF100161CDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572C6CA1EC60BF100161CDA /* AppDelegate.swift */; };
 		7572C6CD1EC60BF100161CDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572C6CC1EC60BF100161CDA /* ViewController.swift */; };
 		7572C6D01EC60BF100161CDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7572C6CE1EC60BF100161CDA /* Main.storyboard */; };
 		7572C6D21EC60BF200161CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7572C6D11EC60BF200161CDA /* Assets.xcassets */; };
 		7572C6D51EC60BF200161CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7572C6D31EC60BF200161CDA /* LaunchScreen.storyboard */; };
+		758F49041ECB4B85001DFE63 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F49031ECB4B85001DFE63 /* StartScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		753318731EC9FA1300D0B5A3 /* InventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
+		753318751ECA06FB00D0B5A3 /* myTransitionlalalal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myTransitionlalalal.swift; sourceTree = "<group>"; };
 		7572C6C71EC60BF100161CDA /* The Shards of the Infinite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Shards of the Infinite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7572C6CA1EC60BF100161CDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7572C6CC1EC60BF100161CDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		7572C6D11EC60BF200161CDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7572C6D41EC60BF200161CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7572C6D61EC60BF200161CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758F49031ECB4B85001DFE63 /* StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				7572C6CA1EC60BF100161CDA /* AppDelegate.swift */,
 				7572C6CC1EC60BF100161CDA /* ViewController.swift */,
+				753318751ECA06FB00D0B5A3 /* myTransitionlalalal.swift */,
+				758F49031ECB4B85001DFE63 /* StartScreenViewController.swift */,
 				753318731EC9FA1300D0B5A3 /* InventoryViewController.swift */,
 				7572C6CE1EC60BF100161CDA /* Main.storyboard */,
 				7572C6D11EC60BF200161CDA /* Assets.xcassets */,
@@ -139,9 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753318761ECA06FB00D0B5A3 /* myTransitionlalalal.swift in Sources */,
 				7572C6CD1EC60BF100161CDA /* ViewController.swift in Sources */,
 				753318741EC9FA1300D0B5A3 /* InventoryViewController.swift in Sources */,
 				7572C6CB1EC60BF100161CDA /* AppDelegate.swift in Sources */,
+				758F49041ECB4B85001DFE63 /* StartScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
