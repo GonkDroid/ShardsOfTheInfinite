@@ -9,10 +9,23 @@
 import Foundation
 
 class Story{
-    
+    var playerInventory:[Item]!
+    var playerEquiped:[Item]!
+    let entities = EnemyDictionary()
+    let items = ItemDictionary()
+    let weapons = WeaponDictionary()
+    let armors = ArmorDictionary()
+    let shields = ShieldDictionary()
     
     func startAdventure(){
-        
+        var player = Player(race: "Humanplayer")
+        playerEquiped.append(Item(name: "Fists", isWeapon: true, uses: -1, isArmor: false, isShield: false))
+        if player.type.name != "Human"{
+            self.placeholderLocation()
+        }
+        else{
+            tavernLocation(playerEntity: player)
+        }
     }
     
     
@@ -92,5 +105,13 @@ class Story{
             }
         }
     }
-
+    
+    func placeholderLocation(){
+        print("You did something wrong")
+    }
+    
+    func tavernLocation(playerEntity: Player){
+        
+    }
+    
 }
