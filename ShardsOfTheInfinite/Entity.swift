@@ -17,18 +17,9 @@ class Entity: NSObject{
     var type:Enemy!
     var currentArmor:Armor!
     
-    var armorList = ArmorDictionary()
+    var armorList = ArmorDictionary().list
     var weaponList = WeaponDictionary()
     var enemylist = EnemyDictionary()
-    
-    init(race: String){
-        type = enemylist.getStats(name: race)
-        currentWeapon = weaponList.getStats(name: type.heldWeapon)
-        currentVis = type.vis
-        currentHp = type.health
-        maxHp = type.health
-        maxVis = type.vis
-    }
     
     func reduceHP(amount: Int){
         currentHp = currentHp - amount

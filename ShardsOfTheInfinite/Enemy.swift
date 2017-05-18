@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Enemy{
+class Enemy: Entity{
     var name:String! = ""
     var experienceWorth:Int! = 0
     var health:Int! = 0
@@ -21,6 +21,7 @@ class Enemy{
     var heldWeapon:String!
     
     init(name: String, weapon: String, experienceWorth: Int, health: Int, evasion: Int, defense: Int, vis: Int, magicAttack: Int, coins: Int, lootLevel: Int){
+        super.init()
         self.name = name
         self.experienceWorth = experienceWorth
         self.health = health

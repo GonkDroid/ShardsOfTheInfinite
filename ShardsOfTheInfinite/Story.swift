@@ -16,11 +16,13 @@ class Story{
     let weapons = WeaponDictionary()
     let armors = ArmorDictionary()
     let shields = ShieldDictionary()
+    var player = Player(race: "Humanplayer")
+    
     
     func startAdventure(){
-        var player = Player(race: "Humanplayer")
+//        var player = Player(race: "Humanplayer")
         playerEquiped.append(Item(name: "Fists", isWeapon: true, uses: -1, isArmor: false, isShield: false))
-        if player.type.name != "Human"{
+        if player.type.name != "Humanplayer"{
             self.placeholderLocation()
         }
         else{
@@ -102,6 +104,33 @@ class Story{
                 if(roll >= hitChance){
                     defenseEntity.reduceHP(amount: damage)
                 }
+            }
+        }
+    }
+    
+    func encounter(enemies: [Entity], playerEntity: Player){
+        var enemies = enemies
+        var stillFighting = true
+        var playerAttacking = true
+        while(stillFighting){
+            if enemies.count != 0{
+                if playerAttacking{
+                    self.combat(offenseEntity: playerEntity, defenseEntity: enemies[0], blocked: false, usedMagic: false)
+                    print("Player HP: \(playerEntity.currentHp)  Enemy HP: \(enemies[0].currentHp)")
+                    playerAttacking = false
+                    if enemies[0].currentHp == 0{
+                        print("Enemy Defeated!")
+                        enemies.remove(at: 0)
+                    }
+                }
+                else{
+                    self.combat(offenseEntity: enemies[0], defenseEntity: playerEntity, blocked: false, usedMagic: false)
+                    print("Player HP: \(playerEntity.currentHp)  Enemy HP: \(enemies[0].currentHp)")
+                    playerAttacking = true
+                }
+            }
+            else{
+                stillFighting = false
             }
         }
     }
