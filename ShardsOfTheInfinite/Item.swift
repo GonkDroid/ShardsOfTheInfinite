@@ -14,12 +14,14 @@ class Item{
     var uses:Int! = -1
     var isArmor:Bool! = false
     var isShield:Bool! = false
+    var cost:Int! = 0
     
-    init(name: String, isWeapon: Bool, uses: Int, isArmor: Bool, isShield: Bool){
+    init(name: String, isWeapon: Bool, uses: Int, isArmor: Bool, isShield: Bool, cost: Int){
         self.name = name
         self.isWeapon = isWeapon
         self.uses = uses
         self.isArmor = isArmor
         self.isShield = isShield
+        self.cost = cost
     }
 }

@@ -147,4 +147,30 @@ class Story: UIViewController{
         //textLabel.text = str
     }
     
+    func shop(level: Int){
+        var shopInventory = [Item]()
+        if level == -1{
+            shopInventory.append(items.getStats(name: "Shortsword"))
+            shopInventory.append(items.getStats(name: "Ironshield"))
+            shopInventory.append(items.getStats(name: "Bow"))
+            shopInventory.append(items.getStats(name: "Arrows"))
+        }
+        func buyProduct(itemNum: Int){
+            var product = shopInventory[itemNum-1]
+            if player.coins < product.cost{
+                //alert("You don't have enough gold for this!")
+            }
+            if product.isArmor{
+                
+            }
+            else if product.isShield{
+                
+            }
+            else if product.isWeapon{
+                
+            }
+            else
+        }
+    }
+    
 }
