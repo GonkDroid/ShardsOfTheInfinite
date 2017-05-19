@@ -11,7 +11,6 @@ import Foundation
 class Enemy: Entity{
     var name:String! = ""
     var experienceWorth:Int! = 0
-    var magicAttack:Int! = 0
     var coins:Int! = 0
     var lootLevel:Int! = 0
     
@@ -29,5 +28,6 @@ class Enemy: Entity{
         self.coins = coins
         self.lootLevel = lootLevel
         currentWeapon = weaponList.getStats(name: weapon)
+        currentArmor = armorList.getStats(name: "none")
     }
 }

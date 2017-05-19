@@ -34,9 +34,9 @@ class Story: UIViewController{
     func combat(offenseEntity: Entity, defenseEntity: Entity, blocked: Bool, usedMagic: Bool){
         let magicHit = 60
         if(blocked){
-            let blockingEvade = defenseEntity.type.evasion + defenseEntity.currentWeapon.blockingDefense
+            let blockingEvade = defenseEntity.evasion + defenseEntity.currentWeapon.blockingDefense
             if(usedMagic){
-                var damage = offenseEntity.type.magicAttack - (defenseEntity.type.defense+defenseEntity.currentArmor.defense)
+                var damage = offenseEntity.magicAttack - (defenseEntity.defense+defenseEntity.currentArmor.defense)
                 if damage <= 0{
                     damage = 1
                 }
@@ -72,7 +72,7 @@ class Story: UIViewController{
         }
         else{
             if(usedMagic){
-                var damage = offenseEntity.magicAttack - (defenseEntity.type.defense+defenseEntity.currentArmor.defense)
+                var damage = offenseEntity.magicAttack - (defenseEntity.defense+defenseEntity.currentArmor.defense)
                 if damage <= 0{
                     damage = 1
                 }
@@ -90,11 +90,11 @@ class Story: UIViewController{
                 }
             }
             else {
-                var damage = offenseEntity.currentWeapon.damage - (defenseEntity.type.defense+defenseEntity.currentArmor.defense)
+                var damage = offenseEntity.currentWeapon.damage - (defenseEntity.defense+defenseEntity.currentArmor.defense)
                 if damage <= 0{
                     damage = 1
                 }
-                var hitChance = offenseEntity.currentWeapon.hitChance - defenseEntity.type.evasion
+                var hitChance = offenseEntity.currentWeapon.hitChance - defenseEntity.evasion
                 let roll = Int(arc4random_uniform(100))
                 
                 if(hitChance < 15) {
