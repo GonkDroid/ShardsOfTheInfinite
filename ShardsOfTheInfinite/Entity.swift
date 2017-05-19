@@ -9,15 +9,16 @@
 import Foundation
 
 class Entity: NSObject{
-    var currentHp:Int!
-    var maxHp:Int!
-    var currentWeapon:Weapon!
+    var currentHp:Int! = 0
+    var maxHp:Int! = 0
+    var currentWeapon:Weapon! = Weapon(name: "", damage: 0, hitChance: 0, blockingDefense: 0)
     var currentVis:Int! = 0
-    var maxVis:Int!
-    var type:Enemy!
+    var maxVis:Int! = 0
     var currentArmor:Armor!
+    var evasion:Int! = 0
+    var defense:Int! = 0
     
-    var armorList = ArmorDictionary().list
+    var armorList = ArmorDictionary()
     var weaponList = WeaponDictionary()
     var enemylist = EnemyDictionary()
     

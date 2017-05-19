@@ -16,7 +16,6 @@
 		75A963D01ECB56BA00935AA0 /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963CF1ECB56BA00935AA0 /* Shield.swift */; };
 		75A963D21ECB577B00935AA0 /* ShieldDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963D11ECB577B00935AA0 /* ShieldDictionary.swift */; };
 		75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841761EC6086D00AF5019 /* AppDelegate.swift */; };
-		75E841791EC6086D00AF5019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841781EC6086D00AF5019 /* ViewController.swift */; };
 		75E8417C1EC6086D00AF5019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417A1EC6086D00AF5019 /* Main.storyboard */; };
 		75E8417E1EC6086D00AF5019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417D1EC6086D00AF5019 /* Assets.xcassets */; };
 		75E841811EC6086D00AF5019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */; };
@@ -38,7 +37,6 @@
 		75A963D11ECB577B00935AA0 /* ShieldDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShieldDictionary.swift; sourceTree = "<group>"; };
 		75E841731EC6086D00AF5019 /* ShardsOfTheInfinite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShardsOfTheInfinite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E841761EC6086D00AF5019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75E841781EC6086D00AF5019 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75E8417B1EC6086D00AF5019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75E8417D1EC6086D00AF5019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75E841801EC6086D00AF5019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				75E841761EC6086D00AF5019 /* AppDelegate.swift */,
-				75E841781EC6086D00AF5019 /* ViewController.swift */,
 				75E8417A1EC6086D00AF5019 /* Main.storyboard */,
 				75E8417D1EC6086D00AF5019 /* Assets.xcassets */,
 				75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */,
@@ -181,7 +178,6 @@
 				75E8418B1EC60C1600AF5019 /* EnemyDictionary.swift in Sources */,
 				75A963CA1ECB4F1000935AA0 /* Armor.swift in Sources */,
 				75E841921EC60C4900AF5019 /* Entity.swift in Sources */,
-				75E841791EC6086D00AF5019 /* ViewController.swift in Sources */,
 				7525D0EA1EC9F8AC0000868E /* Player.swift in Sources */,
 				75E8418F1EC60C3700AF5019 /* WeaponDictionary.swift in Sources */,
 				75A963D21ECB577B00935AA0 /* ShieldDictionary.swift in Sources */,

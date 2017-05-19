@@ -6,11 +6,11 @@
 //  Copyright © 2017 SBHS. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class Story{
-    var playerInventory:[Item]!
-    var playerEquiped:[Item]!
+class Story: UIViewController{
+    var playerInventory:[Item]! = []
+    var playerEquiped:[Item]! = []
     let entities = EnemyDictionary()
     let items = ItemDictionary()
     let weapons = WeaponDictionary()
@@ -19,7 +19,7 @@ class Story{
     var player = Player(race: "Humanplayer")
     
     
-    func startAdventure(){
+    @IBAction func startAdventure(){
 //        var player = Player(race: "Humanplayer")
         playerEquiped.append(Item(name: "Fists", isWeapon: true, uses: -1, isArmor: false, isShield: false))
         if player.type.name != "Humanplayer"{
@@ -54,7 +54,7 @@ class Story{
                 }
             }
             else {
-                var damage = offenseEntity.currentWeapon.damage - (defenseEntity.type.defense+defenseEntity.currentArmor.defense)
+                var damage = offenseEntity.currentWeapon.damage - (defenseEntity.defense+defenseEntity.currentArmor.defense)
                 if damage <= 0{
                     damage = 1
                 }
@@ -72,11 +72,11 @@ class Story{
         }
         else{
             if(usedMagic){
-                var damage = offenseEntity.type.magicAttack - (defenseEntity.type.defense+defenseEntity.currentArmor.defense)
+                var damage = offenseEntity.magicAttack - (defenseEntity.type.defense+defenseEntity.currentArmor.defense)
                 if damage <= 0{
                     damage = 1
                 }
-                var hitChance = magicHit - defenseEntity.type.evasion
+                var hitChance = magicHit - defenseEntity.evasion
                 let roll = Int(arc4random_uniform(100))
                 
                 offenseEntity.useVis(amount: 1)
@@ -140,7 +140,11 @@ class Story{
     }
     
     func tavernLocation(playerEntity: Player){
-        
+        encounter(enemies: [entities.getStats(name: "Drunkenman")], playerEntity: player)
+    }
+    
+    func changeText(string: String){
+        //textLabel.text = str
     }
     
 }
