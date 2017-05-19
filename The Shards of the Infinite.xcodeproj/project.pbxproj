@@ -15,6 +15,8 @@
 		7572C6D21EC60BF200161CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7572C6D11EC60BF200161CDA /* Assets.xcassets */; };
 		7572C6D51EC60BF200161CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7572C6D31EC60BF200161CDA /* LaunchScreen.storyboard */; };
 		758F49041ECB4B85001DFE63 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F49031ECB4B85001DFE63 /* StartScreenViewController.swift */; };
+		75DE1F511ECF4D0500103624 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE1F501ECF4D0500103624 /* StoreViewController.swift */; };
+		75DE1F531ECF4D1100103624 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE1F521ECF4D1100103624 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		7572C6D41EC60BF200161CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7572C6D61EC60BF200161CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		758F49031ECB4B85001DFE63 /* StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		75DE1F501ECF4D0500103624 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		75DE1F521ECF4D1100103624 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				753318751ECA06FB00D0B5A3 /* myTransitionlalalal.swift */,
 				758F49031ECB4B85001DFE63 /* StartScreenViewController.swift */,
 				753318731EC9FA1300D0B5A3 /* InventoryViewController.swift */,
+				75DE1F501ECF4D0500103624 /* StoreViewController.swift */,
+				75DE1F521ECF4D1100103624 /* SettingsViewController.swift */,
 				7572C6CE1EC60BF100161CDA /* Main.storyboard */,
 				7572C6D11EC60BF200161CDA /* Assets.xcassets */,
 				7572C6D31EC60BF200161CDA /* LaunchScreen.storyboard */,
@@ -147,6 +153,8 @@
 			files = (
 				753318761ECA06FB00D0B5A3 /* myTransitionlalalal.swift in Sources */,
 				7572C6CD1EC60BF100161CDA /* ViewController.swift in Sources */,
+				75DE1F531ECF4D1100103624 /* SettingsViewController.swift in Sources */,
+				75DE1F511ECF4D0500103624 /* StoreViewController.swift in Sources */,
 				753318741EC9FA1300D0B5A3 /* InventoryViewController.swift in Sources */,
 				7572C6CB1EC60BF100161CDA /* AppDelegate.swift in Sources */,
 				758F49041ECB4B85001DFE63 /* StartScreenViewController.swift in Sources */,

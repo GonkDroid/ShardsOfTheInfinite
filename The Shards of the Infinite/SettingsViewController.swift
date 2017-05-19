@@ -1,15 +1,17 @@
 //
-//  StartScreenViewController.swift
+//  SettingsViewController.swift
 //  The Shards of the Infinite
 //
-//  Created by Mobile on 5/16/17.
+//  Created by Mobile on 5/19/17.
 //  Copyright © 2017 SBHS. All rights reserved.
 //
 
 import UIKit
 
-class StartScreenViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
+    @IBOutlet var volumeSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,15 +24,6 @@ class StartScreenViewController: UIViewController {
     }
     
 
-    @IBAction func startTapped(_ sender: UIButton) {
-        
-        
-    }
-    
-    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
-        
-    }
-    
     /*
     // MARK: - Navigation
 
