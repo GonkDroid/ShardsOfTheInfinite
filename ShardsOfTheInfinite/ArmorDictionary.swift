@@ -9,9 +9,11 @@
 import Foundation
 
 class ArmorDictionary{
-    var list:[Armor]! = []
+    var list:[Armor]!
     
     init(){
+        print("Loading Armor")
+        list = []
         /*list = [(Armor(name: "None", defense: 0)),
                 (Armor(name: "Leather", defense: 3))]*/
         list.append(Armor(name: "None", defense: 0))

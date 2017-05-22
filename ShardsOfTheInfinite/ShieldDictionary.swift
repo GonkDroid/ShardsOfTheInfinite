@@ -12,6 +12,8 @@ class ShieldDictionary{
     var list:[Shield]! = []
     
     init(){
+        print("Loading Shields")
+        list = []
         /*list = [Shield(evasion: 15, name: "Iron"),
                 Shield(evasion: 50, name: "Adamantine")]*/
         list.append(Shield(evasion: 15, name: "Iron"))

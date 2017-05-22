@@ -12,6 +12,7 @@ class WeaponDictionary{
     var list:[Weapon]!
     
     init(){
+        print("Loading Weapons")
         list = [Weapon(name: "Fists", damage: 1, hitChance: 95, blockingDefense: 10),
                 Weapon(name: "Shortsword", damage: 4, hitChance: 60, blockingDefense: 15),
                 Weapon(name: "Longsword", damage: 8, hitChance: 50, blockingDefense: 20),

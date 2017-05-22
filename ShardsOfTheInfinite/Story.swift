@@ -18,6 +18,7 @@ class Story: UIViewController{
     let shields = ShieldDictionary()
     var player = Player(race: "Humanplayer")
     
+    @IBOutlet weak var testLabel: UILabel!
     
     @IBAction func startAdventure(){
 //        var player = Player(race: "Humanplayer")
@@ -49,7 +50,7 @@ class Story: UIViewController{
                     hitChance = 15
                 }
                 
-                if(roll >= hitChance){
+                if(roll <= hitChance){
                     defenseEntity.reduceHP(amount: damage)
                 }
             }
@@ -65,7 +66,7 @@ class Story: UIViewController{
                     hitChance = 15
                 }
                 
-                if(roll >= hitChance){
+                if(roll <= hitChance){
                     defenseEntity.reduceHP(amount: damage)
                 }
             }
@@ -85,7 +86,7 @@ class Story: UIViewController{
                     hitChance = 15
                 }
                 
-                if(roll >= hitChance){
+                if(roll <= hitChance){
                     defenseEntity.reduceHP(amount: damage)
                 }
             }
@@ -101,7 +102,7 @@ class Story: UIViewController{
                     hitChance = 15
                 }
                 
-                if(roll >= hitChance){
+                if(roll <= hitChance){
                     defenseEntity.reduceHP(amount: damage)
                 }
             }
@@ -144,7 +145,7 @@ class Story: UIViewController{
     }
     
     func changeText(string: String){
-        //textLabel.text = str
+        testLabel.text = string
     }
     
 }

@@ -9,10 +9,13 @@
 import Foundation
 
 class Enemy: Entity{
-    var name:String! = ""
+    var name:String! = "Placeholder"
     var experienceWorth:Int! = 0
     var coins:Int! = 0
     var lootLevel:Int! = 0
+    
+    var armorList = ArmorDictionary()
+    var weaponList = WeaponDictionary()
     
     init(name: String, weapon: String, experienceWorth: Int, health: Int, evasion: Int, defense: Int, vis: Int, magicAttack: Int, coins: Int, lootLevel: Int){
         super.init()

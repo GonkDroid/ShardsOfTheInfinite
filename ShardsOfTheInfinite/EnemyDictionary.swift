@@ -9,9 +9,11 @@
 import Foundation
 
 class EnemyDictionary{
-    var list:[Enemy]! = []
+    var list:[Enemy]!
     
     init(){
+        print("Loading Enemies")
+        list = []
         /*list = [Enemy(name: "Drunkenman", weapon: "Fists", experienceWorth: 1, health: 2, evasion: 0, defense: 0, vis: 0, magicAttack: 0, coins: 15, lootLevel: 0),
                 Enemy(name: "Humanplayer", weapon: "Fists", experienceWorth: 0, health: 18, evasion: 25, defense: 0, vis: 1, magicAttack: 10, coins: 0, lootLevel: 0),
                 Enemy(name: "Goblin", weapon: "Club", experienceWorth: 3, health: 10, evasion: 10, defense: 0, vis: 0, magicAttack: 0, coins: 5, lootLevel: 1),

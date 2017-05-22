@@ -19,10 +19,6 @@ class Entity: NSObject{
     var defense:Int! = 0
     var magicAttack:Int! = 0
     
-    var armorList = ArmorDictionary()
-    var weaponList = WeaponDictionary()
-    var enemylist = EnemyDictionary()
-    
     func reduceHP(amount: Int){
         currentHp = currentHp - amount
     }
