@@ -9,9 +9,11 @@
 import Foundation
 
 class ItemDictionary{
-    var list:[Item]! = []
+    var list:[Item]!
     
     init(){
+        print("Loading Items")
+        list = []
         /*list = [Item(name: "Arrow", isWeapon: false, uses: 12, isArmor: false, isShield: false),
                 Item(name: "Ironshield", isWeapon: false, uses: -1, isArmor: false, isShield: true),
                 Item(name: "Leatherarmor", isWeapon: false, uses: -1, isArmor: true, isShield: false),

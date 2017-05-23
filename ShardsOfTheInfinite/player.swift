@@ -11,14 +11,23 @@ import Foundation
 class Player: Entity{
     var shards:Int! = 0
     var coins:Int! = 0
+    var type:Enemy! = nil
+    
+    var armorList = ArmorDictionary()
+    var weaponList = WeaponDictionary()
+    var enemylist = EnemyDictionary()
     
     init(race: String){
         super.init()
         type = enemylist.getStats(name: race)
-        currentWeapon = weaponList.getStats(name: type.heldWeapon)
-        currentVis = type.vis
-        currentHp = type.health
-        maxHp = type.health
-        maxVis = type.vis
+        self.currentWeapon = type.currentWeapon
+        self.currentVis = type.currentVis
+        self.currentHp = type.currentHp
+        self.maxHp = type.maxHp
+        self.maxVis = type.maxVis
+        self.evasion = type.evasion
+        self.magicAttack = type.magicAttack
+        self.defense = type.defense
+        self.currentArmor = type.currentArmor
     }
 }
