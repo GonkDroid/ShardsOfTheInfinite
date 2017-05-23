@@ -7,45 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7525D0EA1EC9F8AC0000868E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525D0E91EC9F8AC0000868E /* Player.swift */; };
-		7525D0EC1EC9FF440000868E /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525D0EB1EC9FF440000868E /* Story.swift */; };
-		75A963C81ECB4D3300935AA0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963C71ECB4D3300935AA0 /* Item.swift */; };
-		75A963CA1ECB4F1000935AA0 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963C91ECB4F1000935AA0 /* Armor.swift */; };
-		75A963CC1ECB4FE300935AA0 /* ArmorDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963CB1ECB4FE300935AA0 /* ArmorDictionary.swift */; };
-		75A963CE1ECB53D700935AA0 /* ItemDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963CD1ECB53D700935AA0 /* ItemDictionary.swift */; };
-		75A963D01ECB56BA00935AA0 /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963CF1ECB56BA00935AA0 /* Shield.swift */; };
-		75A963D21ECB577B00935AA0 /* ShieldDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A963D11ECB577B00935AA0 /* ShieldDictionary.swift */; };
+		7524AF871ED48E9D00145132 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF7A1ED48E9D00145132 /* Armor.swift */; };
+		7524AF881ED48E9D00145132 /* ArmorDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF7B1ED48E9D00145132 /* ArmorDictionary.swift */; };
+		7524AF891ED48E9D00145132 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF7C1ED48E9D00145132 /* Enemy.swift */; };
+		7524AF8A1ED48E9D00145132 /* EnemyDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF7D1ED48E9D00145132 /* EnemyDictionary.swift */; };
+		7524AF8B1ED48E9D00145132 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF7E1ED48E9D00145132 /* Entity.swift */; };
+		7524AF8C1ED48E9D00145132 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF7F1ED48E9D00145132 /* Item.swift */; };
+		7524AF8D1ED48E9D00145132 /* ItemDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF801ED48E9D00145132 /* ItemDictionary.swift */; };
+		7524AF8E1ED48E9D00145132 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF811ED48E9D00145132 /* player.swift */; };
+		7524AF8F1ED48E9D00145132 /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF821ED48E9D00145132 /* Shield.swift */; };
+		7524AF901ED48E9D00145132 /* ShieldDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF831ED48E9D00145132 /* ShieldDictionary.swift */; };
+		7524AF911ED48E9D00145132 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF841ED48E9D00145132 /* Story.swift */; };
+		7524AF921ED48E9D00145132 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF851ED48E9D00145132 /* Weapon.swift */; };
+		7524AF931ED48E9D00145132 /* WeaponDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF861ED48E9D00145132 /* WeaponDictionary.swift */; };
 		75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841761EC6086D00AF5019 /* AppDelegate.swift */; };
 		75E8417C1EC6086D00AF5019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417A1EC6086D00AF5019 /* Main.storyboard */; };
 		75E8417E1EC6086D00AF5019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417D1EC6086D00AF5019 /* Assets.xcassets */; };
 		75E841811EC6086D00AF5019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */; };
-		75E841891EC60BFC00AF5019 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841881EC60BFC00AF5019 /* Enemy.swift */; };
-		75E8418B1EC60C1600AF5019 /* EnemyDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E8418A1EC60C1600AF5019 /* EnemyDictionary.swift */; };
-		75E8418D1EC60C2800AF5019 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E8418C1EC60C2800AF5019 /* Weapon.swift */; };
-		75E8418F1EC60C3700AF5019 /* WeaponDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E8418E1EC60C3700AF5019 /* WeaponDictionary.swift */; };
-		75E841921EC60C4900AF5019 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841911EC60C4900AF5019 /* Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7525D0E91EC9F8AC0000868E /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		7525D0EB1EC9FF440000868E /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		75A963C71ECB4D3300935AA0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		75A963C91ECB4F1000935AA0 /* Armor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
-		75A963CB1ECB4FE300935AA0 /* ArmorDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmorDictionary.swift; sourceTree = "<group>"; };
-		75A963CD1ECB53D700935AA0 /* ItemDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDictionary.swift; sourceTree = "<group>"; };
-		75A963CF1ECB56BA00935AA0 /* Shield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
-		75A963D11ECB577B00935AA0 /* ShieldDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShieldDictionary.swift; sourceTree = "<group>"; };
+		7524AF7A1ED48E9D00145132 /* Armor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
+		7524AF7B1ED48E9D00145132 /* ArmorDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmorDictionary.swift; sourceTree = "<group>"; };
+		7524AF7C1ED48E9D00145132 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		7524AF7D1ED48E9D00145132 /* EnemyDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyDictionary.swift; sourceTree = "<group>"; };
+		7524AF7E1ED48E9D00145132 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		7524AF7F1ED48E9D00145132 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7524AF801ED48E9D00145132 /* ItemDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDictionary.swift; sourceTree = "<group>"; };
+		7524AF811ED48E9D00145132 /* player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
+		7524AF821ED48E9D00145132 /* Shield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
+		7524AF831ED48E9D00145132 /* ShieldDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShieldDictionary.swift; sourceTree = "<group>"; };
+		7524AF841ED48E9D00145132 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		7524AF851ED48E9D00145132 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		7524AF861ED48E9D00145132 /* WeaponDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponDictionary.swift; sourceTree = "<group>"; };
 		75E841731EC6086D00AF5019 /* ShardsOfTheInfinite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShardsOfTheInfinite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E841761EC6086D00AF5019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75E8417B1EC6086D00AF5019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75E8417D1EC6086D00AF5019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75E841801EC6086D00AF5019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75E841821EC6086D00AF5019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75E841881EC60BFC00AF5019 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
-		75E8418A1EC60C1600AF5019 /* EnemyDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyDictionary.swift; sourceTree = "<group>"; };
-		75E8418C1EC60C2800AF5019 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
-		75E8418E1EC60C3700AF5019 /* WeaponDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponDictionary.swift; sourceTree = "<group>"; };
-		75E841911EC60C4900AF5019 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,19 +83,19 @@
 				75E8417D1EC6086D00AF5019 /* Assets.xcassets */,
 				75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */,
 				75E841821EC6086D00AF5019 /* Info.plist */,
-				75E8418A1EC60C1600AF5019 /* EnemyDictionary.swift */,
-				75E841881EC60BFC00AF5019 /* Enemy.swift */,
-				75E8418C1EC60C2800AF5019 /* Weapon.swift */,
-				75E8418E1EC60C3700AF5019 /* WeaponDictionary.swift */,
-				75E841911EC60C4900AF5019 /* Entity.swift */,
-				7525D0E91EC9F8AC0000868E /* Player.swift */,
-				7525D0EB1EC9FF440000868E /* Story.swift */,
-				75A963C71ECB4D3300935AA0 /* Item.swift */,
-				75A963C91ECB4F1000935AA0 /* Armor.swift */,
-				75A963CB1ECB4FE300935AA0 /* ArmorDictionary.swift */,
-				75A963CD1ECB53D700935AA0 /* ItemDictionary.swift */,
-				75A963CF1ECB56BA00935AA0 /* Shield.swift */,
-				75A963D11ECB577B00935AA0 /* ShieldDictionary.swift */,
+				7524AF7A1ED48E9D00145132 /* Armor.swift */,
+				7524AF7B1ED48E9D00145132 /* ArmorDictionary.swift */,
+				7524AF7C1ED48E9D00145132 /* Enemy.swift */,
+				7524AF7D1ED48E9D00145132 /* EnemyDictionary.swift */,
+				7524AF7E1ED48E9D00145132 /* Entity.swift */,
+				7524AF7F1ED48E9D00145132 /* Item.swift */,
+				7524AF801ED48E9D00145132 /* ItemDictionary.swift */,
+				7524AF811ED48E9D00145132 /* player.swift */,
+				7524AF821ED48E9D00145132 /* Shield.swift */,
+				7524AF831ED48E9D00145132 /* ShieldDictionary.swift */,
+				7524AF841ED48E9D00145132 /* Story.swift */,
+				7524AF851ED48E9D00145132 /* Weapon.swift */,
+				7524AF861ED48E9D00145132 /* WeaponDictionary.swift */,
 			);
 			path = ShardsOfTheInfinite;
 			sourceTree = "<group>";
@@ -172,20 +172,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A963C81ECB4D3300935AA0 /* Item.swift in Sources */,
-				75A963CE1ECB53D700935AA0 /* ItemDictionary.swift in Sources */,
-				75E8418D1EC60C2800AF5019 /* Weapon.swift in Sources */,
-				75E8418B1EC60C1600AF5019 /* EnemyDictionary.swift in Sources */,
-				75A963CA1ECB4F1000935AA0 /* Armor.swift in Sources */,
-				75E841921EC60C4900AF5019 /* Entity.swift in Sources */,
-				7525D0EA1EC9F8AC0000868E /* Player.swift in Sources */,
-				75E8418F1EC60C3700AF5019 /* WeaponDictionary.swift in Sources */,
-				75A963D21ECB577B00935AA0 /* ShieldDictionary.swift in Sources */,
+				7524AF901ED48E9D00145132 /* ShieldDictionary.swift in Sources */,
+				7524AF891ED48E9D00145132 /* Enemy.swift in Sources */,
 				75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */,
-				75E841891EC60BFC00AF5019 /* Enemy.swift in Sources */,
-				7525D0EC1EC9FF440000868E /* Story.swift in Sources */,
-				75A963D01ECB56BA00935AA0 /* Shield.swift in Sources */,
-				75A963CC1ECB4FE300935AA0 /* ArmorDictionary.swift in Sources */,
+				7524AF8B1ED48E9D00145132 /* Entity.swift in Sources */,
+				7524AF921ED48E9D00145132 /* Weapon.swift in Sources */,
+				7524AF931ED48E9D00145132 /* WeaponDictionary.swift in Sources */,
+				7524AF871ED48E9D00145132 /* Armor.swift in Sources */,
+				7524AF8E1ED48E9D00145132 /* player.swift in Sources */,
+				7524AF8D1ED48E9D00145132 /* ItemDictionary.swift in Sources */,
+				7524AF8F1ED48E9D00145132 /* Shield.swift in Sources */,
+				7524AF8C1ED48E9D00145132 /* Item.swift in Sources */,
+				7524AF881ED48E9D00145132 /* ArmorDictionary.swift in Sources */,
+				7524AF8A1ED48E9D00145132 /* EnemyDictionary.swift in Sources */,
+				7524AF911ED48E9D00145132 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

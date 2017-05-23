@@ -22,7 +22,7 @@ class Story: UIViewController{
     
     @IBAction func startAdventure(){
 //        var player = Player(race: "Humanplayer")
-        playerEquiped.append(Item(name: "Fists", isWeapon: true, uses: -1, isArmor: false, isShield: false))
+        playerEquiped.append(Item(name: "Fists", isWeapon: true, uses: -1, isArmor: false, isShield: false, cost: 0))
         if player.type.name != "Humanplayer"{
             self.placeholderLocation()
         }
@@ -148,7 +148,7 @@ class Story: UIViewController{
         testLabel.text = string
     }
     
-    func shop(level: Int){
+    /*func shop(level: Int){
         var shopInventory = [Item]()
         if level == -1{
             shopInventory.append(items.getStats(name: "Shortsword"))
@@ -172,6 +172,6 @@ class Story: UIViewController{
             }
             else
         }
-    }
+    }*/
     
 }
