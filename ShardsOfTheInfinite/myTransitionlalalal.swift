@@ -17,9 +17,9 @@ class SegueFromLeft: UIStoryboardSegue{
         src.view.addSubview(slide_view!)
 //        slide_view?.transform=CGAffineTransform.init(translationX: src.view.frame.size.width, 0)
 //        slide_view?.transform = CGAffineTransform.init(rotationAngle: 0)
-        slide_view?.transform = CGAffineTransform.init(translationX: 500, y: 500)
+        slide_view?.transform = CGAffineTransform.init(translationX: 500, y: 0)
         
-        UIView.animate(withDuration: 1.0,
+        UIView.animate(withDuration: 0.3,
                                    delay: 0,
                                    options: UIViewAnimationOptions.curveLinear,
                                    animations: {
