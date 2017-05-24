@@ -20,9 +20,15 @@
 		7524AF911ED48E9D00145132 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF841ED48E9D00145132 /* Story.swift */; };
 		7524AF921ED48E9D00145132 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF851ED48E9D00145132 /* Weapon.swift */; };
 		7524AF931ED48E9D00145132 /* WeaponDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524AF861ED48E9D00145132 /* WeaponDictionary.swift */; };
+		75D1D64F1ED5E9C2009C85C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D1D64E1ED5E9C2009C85C5 /* Assets.xcassets */; };
+		75D1D6551ED5E9EB009C85C5 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1D6501ED5E9EB009C85C5 /* InventoryViewController.swift */; };
+		75D1D6561ED5E9EB009C85C5 /* myTransitionlalalal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1D6511ED5E9EB009C85C5 /* myTransitionlalalal.swift */; };
+		75D1D6571ED5E9EB009C85C5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1D6521ED5E9EB009C85C5 /* SettingsViewController.swift */; };
+		75D1D6581ED5E9EB009C85C5 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1D6531ED5E9EB009C85C5 /* StartScreenViewController.swift */; };
+		75D1D6591ED5E9EB009C85C5 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1D6541ED5E9EB009C85C5 /* StoreViewController.swift */; };
+		75D1D65B1ED5EA05009C85C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D1D65A1ED5EA05009C85C5 /* Main.storyboard */; };
+		75D1D65D1ED5EA21009C85C5 /* deutschgothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75D1D65C1ED5EA21009C85C5 /* deutschgothic.ttf */; };
 		75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E841761EC6086D00AF5019 /* AppDelegate.swift */; };
-		75E8417C1EC6086D00AF5019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417A1EC6086D00AF5019 /* Main.storyboard */; };
-		75E8417E1EC6086D00AF5019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417D1EC6086D00AF5019 /* Assets.xcassets */; };
 		75E841811EC6086D00AF5019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -40,10 +46,16 @@
 		7524AF841ED48E9D00145132 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		7524AF851ED48E9D00145132 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		7524AF861ED48E9D00145132 /* WeaponDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponDictionary.swift; sourceTree = "<group>"; };
+		75D1D64E1ED5E9C2009C85C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75D1D6501ED5E9EB009C85C5 /* InventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
+		75D1D6511ED5E9EB009C85C5 /* myTransitionlalalal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myTransitionlalalal.swift; sourceTree = "<group>"; };
+		75D1D6521ED5E9EB009C85C5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		75D1D6531ED5E9EB009C85C5 /* StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		75D1D6541ED5E9EB009C85C5 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		75D1D65A1ED5EA05009C85C5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		75D1D65C1ED5EA21009C85C5 /* deutschgothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = deutschgothic.ttf; sourceTree = "<group>"; };
 		75E841731EC6086D00AF5019 /* ShardsOfTheInfinite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShardsOfTheInfinite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E841761EC6086D00AF5019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75E8417B1EC6086D00AF5019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		75E8417D1EC6086D00AF5019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75E841801EC6086D00AF5019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75E841821EC6086D00AF5019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,9 +91,14 @@
 			isa = PBXGroup;
 			children = (
 				75E841761EC6086D00AF5019 /* AppDelegate.swift */,
-				75E8417A1EC6086D00AF5019 /* Main.storyboard */,
-				75E8417D1EC6086D00AF5019 /* Assets.xcassets */,
+				75D1D6501ED5E9EB009C85C5 /* InventoryViewController.swift */,
+				75D1D6511ED5E9EB009C85C5 /* myTransitionlalalal.swift */,
+				75D1D6521ED5E9EB009C85C5 /* SettingsViewController.swift */,
+				75D1D6531ED5E9EB009C85C5 /* StartScreenViewController.swift */,
+				75D1D6541ED5E9EB009C85C5 /* StoreViewController.swift */,
+				75D1D65A1ED5EA05009C85C5 /* Main.storyboard */,
 				75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */,
+				75D1D64E1ED5E9C2009C85C5 /* Assets.xcassets */,
 				75E841821EC6086D00AF5019 /* Info.plist */,
 				7524AF7A1ED48E9D00145132 /* Armor.swift */,
 				7524AF7B1ED48E9D00145132 /* ArmorDictionary.swift */,
@@ -96,6 +113,7 @@
 				7524AF841ED48E9D00145132 /* Story.swift */,
 				7524AF851ED48E9D00145132 /* Weapon.swift */,
 				7524AF861ED48E9D00145132 /* WeaponDictionary.swift */,
+				75D1D65C1ED5EA21009C85C5 /* deutschgothic.ttf */,
 			);
 			path = ShardsOfTheInfinite;
 			sourceTree = "<group>";
@@ -159,9 +177,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D1D65B1ED5EA05009C85C5 /* Main.storyboard in Resources */,
+				75D1D64F1ED5E9C2009C85C5 /* Assets.xcassets in Resources */,
 				75E841811EC6086D00AF5019 /* LaunchScreen.storyboard in Resources */,
-				75E8417E1EC6086D00AF5019 /* Assets.xcassets in Resources */,
-				75E8417C1EC6086D00AF5019 /* Main.storyboard in Resources */,
+				75D1D65D1ED5EA21009C85C5 /* deutschgothic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,13 +194,18 @@
 				7524AF901ED48E9D00145132 /* ShieldDictionary.swift in Sources */,
 				7524AF891ED48E9D00145132 /* Enemy.swift in Sources */,
 				75E841771EC6086D00AF5019 /* AppDelegate.swift in Sources */,
+				75D1D6581ED5E9EB009C85C5 /* StartScreenViewController.swift in Sources */,
 				7524AF8B1ED48E9D00145132 /* Entity.swift in Sources */,
 				7524AF921ED48E9D00145132 /* Weapon.swift in Sources */,
 				7524AF931ED48E9D00145132 /* WeaponDictionary.swift in Sources */,
 				7524AF871ED48E9D00145132 /* Armor.swift in Sources */,
+				75D1D6591ED5E9EB009C85C5 /* StoreViewController.swift in Sources */,
+				75D1D6551ED5E9EB009C85C5 /* InventoryViewController.swift in Sources */,
+				75D1D6561ED5E9EB009C85C5 /* myTransitionlalalal.swift in Sources */,
 				7524AF8E1ED48E9D00145132 /* player.swift in Sources */,
 				7524AF8D1ED48E9D00145132 /* ItemDictionary.swift in Sources */,
 				7524AF8F1ED48E9D00145132 /* Shield.swift in Sources */,
+				75D1D6571ED5E9EB009C85C5 /* SettingsViewController.swift in Sources */,
 				7524AF8C1ED48E9D00145132 /* Item.swift in Sources */,
 				7524AF881ED48E9D00145132 /* ArmorDictionary.swift in Sources */,
 				7524AF8A1ED48E9D00145132 /* EnemyDictionary.swift in Sources */,
@@ -192,14 +216,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		75E8417A1EC6086D00AF5019 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75E8417B1EC6086D00AF5019 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		75E8417F1EC6086D00AF5019 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

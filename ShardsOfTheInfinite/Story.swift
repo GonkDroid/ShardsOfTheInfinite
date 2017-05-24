@@ -111,6 +111,7 @@ class Story: UIViewController{
     
     func encounter(enemies: [Entity], playerEntity: Player){
         var enemies = enemies
+        enemies[0].currentHp = enemies[0].maxHp
         var stillFighting = true
         var playerAttacking = true
         while(stillFighting){
