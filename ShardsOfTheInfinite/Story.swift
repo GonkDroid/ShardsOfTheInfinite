@@ -149,9 +149,7 @@ class Story: UIViewController{
         testLabel.text = string
     }
     
-    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
-        
-    }
+
     
     /*func shop(level: Int){
         var shopInventory = [Item]()
