@@ -18,19 +18,44 @@ class Story: UIViewController{
     let shields = ShieldDictionary()
     var player = Player(race: "Humanplayer")
     
+    var choiceButton1 = UIButton()
+    var choiceButton2 = UIButton()
+    var choiceButton3 = UIButton()
+    var vText = UITextView()
     
     var choiceButtons:[UIButton] = []
-    var vText:String = ""
     var commenceFighting = 0
     
     let ArrestEnding = "You awake and find yourself in jail. Your adventure will continue no further. You will spend the rest of your days working in the iron mines."
     
     
     override func viewDidLoad(){
-        choiceButtons.append(view.viewWithTag(1) as! UIButton)
-        choiceButtons.append(view.viewWithTag(2) as! UIButton)
-        choiceButtons.append(view.viewWithTag(3) as! UIButton)
-        vText = (view.viewWithTag(-1) as! UITextView).text
+        let width = view.bounds.width
+        let height = view.bounds.height
+        choiceButton1 = UIButton(frame: CGRect(x: -(width/2), y: -(height/2), width: width/3, height: width/6))
+        choiceButton1.setTitle("Choice 1", for: .normal)
+        choiceButton1.tag = 1
+        choiceButton2 = UIButton(frame: CGRect(x: -(width/2)+(width/3), y: -(height/2), width: width/3, height: width/6))
+        choiceButton2.setTitle("Choice 2", for: .normal)
+        choiceButton2.tag = 2
+        choiceButton3 = UIButton(frame: CGRect(x: -(width/2)+(2*width/3), y: -(height/2), width: width/3, height: width/6))
+        choiceButton3.setTitle("Choice 3", for: .normal)
+        choiceButton3.tag = 3
+        choiceButtons.append(choiceButton1)
+        choiceButtons.append(choiceButton2)
+        choiceButtons.append(choiceButton3)
+        for i in choiceButtons{
+            i.setTitleColor(.black, for: .normal)
+            i.addTarget(self, action: #selector(choiceChosen), for: .touchUpInside)
+            view.addSubview(i)
+        }
+        vText = UITextView(frame: CGRect(x: 0, y: 0, width: width, height: height/2))
+        self.automaticallyAdjustsScrollViewInsets = false
+        vText.center = self.view.center
+        vText.textAlignment = NSTextAlignment.justified
+        vText.textColor = .black
+        view.addSubview(vText)
+//        vText = vText.text
 //        var player = Player(race: "Humanplayer")
         playerEquiped.append(Item(name: "Fists", isWeapon: true, uses: -1, isArmor: false, isShield: false, cost: 0))
         if player.type.name != "Humanplayer"{
@@ -155,8 +180,8 @@ class Story: UIViewController{
     }
     
     func tavernLocation(playerEntity: Player){
-        
-        vText = "After a long day of grueling work the apprentice of a fletcher, you find yourself relaxing in the back of a tavern. [Tavern Background Appears] It’s a small, homely place, and the air is filled with the smell of the owner’s cooking wafting throughout and the  voices of your neighbors making merry. The place is packed to the brim at this hour, and some people tend to get drunk quickly. You wait for the inevitable fight to break out. A bright red faced man stumbles toward your table.'The frumgpfm diyasay ‘bout me muva.'"
+        vText.text = ""
+        add(str: "After a long day of grueling work the apprentice of a fletcher, you find yourself relaxing in the back of a tavern. [Tavern Background Appears] It’s a small, homely place, and the air is filled with the smell of the owner’s cooking wafting throughout and the  voices of your neighbors making merry. The place is packed to the brim at this hour, and some people tend to get drunk quickly. You wait for the inevitable fight to break out. A bright red faced man stumbles toward your table.'The frumgpfm diyasay ‘bout me muva.'")
             add(str: "Choice 1: Say Nothing, Choice 2: Stand up and use your height to intimidate him, or Choice 3: Try to calm the drunkard.")
             showButtons(show: true)
             while(commenceFighting != 1){
@@ -166,7 +191,7 @@ class Story: UIViewController{
         }
     
     
-    @IBAction func choiceChosen(_ sender: UIButton) {
+    func choiceChosen(_ sender: UIButton) {
             let choiceSet = sender.tag/3
             let choiceNumber = sender.tag%3
             if choiceSet <= 1{
@@ -207,7 +232,7 @@ class Story: UIViewController{
         }
         
         func add(str: String){
-            vText.append(str)
+            vText.text.append(str)
         }
         
         func jailEnd(){
@@ -215,6 +240,7 @@ class Story: UIViewController{
             //gameOver.isHidden = false
             //jailEndText.isHidden = false
         }
+
     }
 
     
