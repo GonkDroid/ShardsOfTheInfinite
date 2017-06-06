@@ -18,9 +18,19 @@ class Story: UIViewController{
     let shields = ShieldDictionary()
     var player = Player(race: "Humanplayer")
     
-    @IBOutlet weak var testLabel: UILabel!
     
-    @IBAction func startAdventure(){
+    var choiceButtons:[UIButton] = []
+    var vText:String = ""
+    var commenceFighting = 0
+    
+    let ArrestEnding = "You awake and find yourself in jail. Your adventure will continue no further. You will spend the rest of your days working in the iron mines."
+    
+    
+    override func viewDidLoad(){
+        choiceButtons.append(view.viewWithTag(1) as! UIButton)
+        choiceButtons.append(view.viewWithTag(2) as! UIButton)
+        choiceButtons.append(view.viewWithTag(3) as! UIButton)
+        vText = (view.viewWithTag(-1) as! UITextView).text
 //        var player = Player(race: "Humanplayer")
         playerEquiped.append(Item(name: "Fists", isWeapon: true, uses: -1, isArmor: false, isShield: false, cost: 0))
         if player.type.name != "Humanplayer"{
@@ -135,6 +145,9 @@ class Story: UIViewController{
                 stillFighting = false
             }
         }
+        if commenceFighting == 1{
+            add(str: " The man falls at your feet, exhausted and passes out, as everyone else’s heads turn away back to their drinks and the adrenalin coursing through you dies down, you see that out of the man’s tunic falls a hefty pouch of gold.")
+        }
     }
     
     func placeholderLocation(){
@@ -142,13 +155,67 @@ class Story: UIViewController{
     }
     
     func tavernLocation(playerEntity: Player){
-        encounter(enemies: [entities.getStats(name: "Drunkenman")], playerEntity: player)
-    }
+        
+        vText = "After a long day of grueling work the apprentice of a fletcher, you find yourself relaxing in the back of a tavern. [Tavern Background Appears] It’s a small, homely place, and the air is filled with the smell of the owner’s cooking wafting throughout and the  voices of your neighbors making merry. The place is packed to the brim at this hour, and some people tend to get drunk quickly. You wait for the inevitable fight to break out. A bright red faced man stumbles toward your table.'The frumgpfm diyasay ‘bout me muva.'"
+            add(str: "Choice 1: Say Nothing, Choice 2: Stand up and use your height to intimidate him, or Choice 3: Try to calm the drunkard.")
+            showButtons(show: true)
+            while(commenceFighting != 1){
+            }
+            encounter(enemies: [entities.getStats(name: "Drunkman")], playerEntity: player)
+        
+        }
     
-    func changeText(string: String){
-        testLabel.text = string
-    }
     
+    @IBAction func choiceChosen(_ sender: UIButton) {
+            let choiceSet = sender.tag/3
+            let choiceNumber = sender.tag%3
+            if choiceSet <= 1{
+                if choiceNumber == 1{
+                    add(str: "The man is incomprehensible, it’s best to ignore him.'Oi, don effin’ ignore me!'The man lurches toward you while throwing a very shoddy haymaker. You simply move your head and his punch goes wide. You stand up and get ready for a fight.")
+                }
+                else if choiceNumber == 2{
+                    add(str: "The man is smaller than you are, you think that he might back off if you stand up to your full height and stand your ground. 'Back off before you get hurt.'The man’s demeanor remains unchanged. 'Take this!'he yells, as he takes a wide swing at you. You take a step back and his swing passes harmlessly in front of your face. You see the opportunity present itself and go to strike back.")
+                }
+                else if choiceNumber == 0{
+                    add(str: "You have no quarrel with this man, it’s probably best to explain to him that you have never met him before. 'I don’t believe that we’ve met before…' Your voice trails off as he yells something even less comprehensible and goes to take a swing at you. You had hoped to avoid this, but nonetheless you ready yourself for a fight.")
+                }
+                commenceFighting = 1
+                for i in choiceButtons{
+                    i.tag += 3
+                }
+            }
+            else if choiceSet <= 2{
+                if choiceNumber == 1{
+                    add(str: "This man is clearly a drunk, you’re helping him by taking the money he uses to fuel his addiction. You pocket the pouch (You gain 15 gold). Luckily, no one seems to notice.")
+                    player.coins += 15
+                }
+                if choiceNumber == 2{
+                    add(str: "The man was only drunk, drinking isn’t a crime. You have no further business with the man that lay unconscious in front of you, you turn and walk away.")
+                }
+                if choiceNumber == 0{
+                    add(str: "This man committed a grave offense against you, he will never make the same mistake again. You pull out your knife and run it across his throat. You hear screams of pure terror around you as he coughs and splutters up his own blood. You are immediately tackled by a nearby guard and relieved of your blade as you feel a sharp pain in the back of your head and consciousness fades from you.")
+                    jailEnd()
+                }
+            }
+            showButtons(show: false)
+        }
+        
+        func showButtons(show: Bool){
+            for i in choiceButtons{
+                i.isHidden = !show
+            }
+        }
+        
+        func add(str: String){
+            vText.append(str)
+        }
+        
+        func jailEnd(){
+            add(str: ArrestEnding)
+            //gameOver.isHidden = false
+            //jailEndText.isHidden = false
+        }
+    }
 
     
     /*func shop(level: Int){
@@ -176,5 +243,3 @@ class Story: UIViewController{
             else
         }
     }*/
-    
-}

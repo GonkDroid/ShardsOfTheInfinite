@@ -10,7 +10,7 @@ import Foundation
 
 class Player: Entity{
     var shards:Int! = 0
-    var coins:Int! = 0
+    var coins:Int = 0
     var type:Enemy! = nil
     
     var armorList = ArmorDictionary()
