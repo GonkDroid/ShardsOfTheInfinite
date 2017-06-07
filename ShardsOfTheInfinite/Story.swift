@@ -18,10 +18,19 @@ class Story: UIViewController{
     let shields = ShieldDictionary()
     var player = Player(race: "Humanplayer")
     
-    var choiceButton1 = UIButton()
-    var choiceButton2 = UIButton()
-    var choiceButton3 = UIButton()
-    var vText = UITextView()
+//    var choiceButton1 = UIButton()
+//    var choiceButton2 = UIButton()
+//    var choiceButton3 = UIButton()
+    
+    
+    @IBOutlet var choiceButton1: UIButton!
+    @IBOutlet var choiceButton2: UIButton!
+    @IBOutlet var choiceButton3: UIButton!
+    
+    @IBOutlet var vText: UITextView!
+    
+    
+    //var vText = UITextView()
     
     var choiceButtons:[UIButton] = []
     var commenceFighting = 0
@@ -30,31 +39,32 @@ class Story: UIViewController{
     
     
     override func viewDidLoad(){
-        let width = view.bounds.width
-        let height = view.bounds.height
-        choiceButton1 = UIButton(frame: CGRect(x: -(width/2), y: -(height/2), width: width/3, height: width/6))
-        choiceButton1.setTitle("Choice 1", for: .normal)
-        choiceButton1.tag = 1
-        choiceButton2 = UIButton(frame: CGRect(x: -(width/2)+(width/3), y: -(height/2), width: width/3, height: width/6))
-        choiceButton2.setTitle("Choice 2", for: .normal)
-        choiceButton2.tag = 2
-        choiceButton3 = UIButton(frame: CGRect(x: -(width/2)+(2*width/3), y: -(height/2), width: width/3, height: width/6))
-        choiceButton3.setTitle("Choice 3", for: .normal)
-        choiceButton3.tag = 3
-        choiceButtons.append(choiceButton1)
-        choiceButtons.append(choiceButton2)
-        choiceButtons.append(choiceButton3)
-        for i in choiceButtons{
-            i.setTitleColor(.black, for: .normal)
-            i.addTarget(self, action: #selector(choiceChosen), for: .touchUpInside)
-            view.addSubview(i)
-        }
-        vText = UITextView(frame: CGRect(x: 0, y: 0, width: width, height: height/2))
-        self.automaticallyAdjustsScrollViewInsets = false
-        vText.center = self.view.center
-        vText.textAlignment = NSTextAlignment.justified
-        vText.textColor = .black
-        view.addSubview(vText)
+//        let width = view.bounds.width
+//        let height = view.bounds.height
+//        choiceButton1 = UIButton(frame: CGRect(x: -(width/2), y: -(height/2), width: width/3, height: width/6))
+//        choiceButton1.setTitle("Choice 1", for: .normal)
+//        choiceButton1.tag = 1
+//        choiceButton2 = UIButton(frame: CGRect(x: -(width/2)+(width/3), y: -(height/2), width: width/3, height: width/6))
+////        choiceButton2 = UIButton(frame: CGRect(x: 0, y: 0, width: width/3, height: width/6))
+//        choiceButton2.setTitle("Choice 2", for: .normal)
+//        choiceButton2.tag = 2
+//        choiceButton3 = UIButton(frame: CGRect(x: -(width/2)+(2*width/3), y: -(height/2), width: width/3, height: width/6))
+//        choiceButton3.setTitle("Choice 3", for: .normal)
+//        choiceButton3.tag = 3
+//        choiceButtons.append(choiceButton1)
+//        choiceButtons.append(choiceButton2)
+//        choiceButtons.append(choiceButton3)
+//        for i in choiceButtons{
+//            i.setTitleColor(.black, for: .normal)
+//            i.addTarget(self, action: #selector(choiceChosen), for: .touchUpInside)
+//            view.addSubview(i)
+//        }
+//        vText = UITextView(frame: CGRect(x: 0, y: 0, width: width, height: height/2))
+//        self.automaticallyAdjustsScrollViewInsets = false
+//        vText.center = self.view.center
+//        vText.textAlignment = NSTextAlignment.justified
+//        vText.textColor = .black
+//        view.addSubview(vText)
 //        vText = vText.text
 //        var player = Player(race: "Humanplayer")
         playerEquiped.append(Item(name: "Fists", isWeapon: true, uses: -1, isArmor: false, isShield: false, cost: 0))
